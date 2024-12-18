@@ -1,6 +1,10 @@
 const compose = function (...functions) {
   return function (...args) {
-    return functions.reduceRight(function (params, f) { return [f(...params)]; }, args)
+    return functions.reduceRight(
+      function (params, f) {
+        return [f(...params)];
+      },
+      args);
   }
 }
 
