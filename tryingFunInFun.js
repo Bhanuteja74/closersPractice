@@ -22,7 +22,7 @@ const sub1 = (num) => num - 1;
 
 const subAndAdd = combine(add2)(sub1);
 //
-//
+
 const numbers = [1, 2, 3, 4, 5];
 
 const isEven = (num) => (num & 1) === 0;
